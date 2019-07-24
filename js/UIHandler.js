@@ -13,21 +13,24 @@ function displayResults(Response){
         SearchResults.removeChild(SearchResults.firstChild)
     }
     for(i=0; i<Response.length; i++){
-        let CardLink = document.createElement("a");
-        CardLink.setAttribute("href", "#")
         let Card = document.createElement("div");
-        Card.className = "Card";
-
+        Card.className = "Card-Wrapper";
+        
         let CountryFlag = document.createElement("img");
         CountryFlag.setAttribute("src", Response[i]["flag"]);
         CountryFlag.className = "Card-Image";
         Card.appendChild(CountryFlag);
         
-        let CountryName = document.createElement("h1");
+        let CountryName = document.createElement("p");
         CountryName.innerHTML = Response[i]["name"];
         CountryName.className = "Card-Title";
         Card.appendChild(CountryName);
         
-        SearchResults.appendChild(Card);
+        let CardLink = document.createElement("a");
+        CardLink.setAttribute("href", "#");
+        CardLink.className = "Card-Link";
+        CardLink.appendChild(Card)
+
+        SearchResults.appendChild(CardLink);
     }
 }

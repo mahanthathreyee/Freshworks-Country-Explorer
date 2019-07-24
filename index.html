@@ -4,18 +4,21 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Search</title>
-    <link rel = "stylesheet" type = "text/css" href = "css/index.css">
-    <script src = "js/UIHandler.js"></script>
-    <script src = "js/AsyncHandler.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index-sm.css">
+    <script src="js/UIHandler.js"></script>
+    <script src="js/AsyncHandler.js"></script>
 </head>
 <body>
-    <div class = "Container">
-        <div class = "Search">
-            <input id="Search-Bar" class = "Search-Bar" type = "text"/>
-            <button class = "Search-Btn" onclick="searchCountries()">Search</button>
+    <div class="Container">
+        <div class="Search">
+            <input id="Search-Bar" class="Search-Bar" type="text" placeholder="Search"/>
+            <button class="Search-Btn" onclick="searchCountries()">Search</button>
         </div>
-        <div id = "Search-Results" class = "Search-Results">
+        <div class="Search-Results-Wrapper">
+            <h1 class="Search-Results-Title">Search Results</h1>
+            <div id="Search-Results" class="Search-Results">
+            </div>
         </div>
     </div>
 </body>
