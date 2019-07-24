@@ -30,7 +30,7 @@ a {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 1.2em;
-    border-bottom: 3px solid #cecece;
+    border-bottom: 3px solid #e7e7e7;
     transition: border 0.5s ease;
 }
 
@@ -45,15 +45,21 @@ a {
 }
 
 .Search-Btn{
-    margin-top: 25px;
+    margin-top: 10px;
     padding: 10px 25px;
-    background-color: #ffffff;
     border: 1px #000000 solid;
     cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: underline transparent;
+    transition: all 0.5s ease;
 }
 
 .Search-Btn:hover{
-    text-decoration: underline #000000;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: underline #ffffff;
+    transition: all 0.5s ease;
 }
 
 .Search-Results-Wrapper{

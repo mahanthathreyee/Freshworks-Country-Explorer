@@ -7,11 +7,16 @@ window.addEventListener('load', () => {
     });
 });
 
-function displayResults(Response){
+function removeSearchResults(){
     const SearchResults = document.getElementById("Search-Results")
     while(SearchResults.firstChild){
         SearchResults.removeChild(SearchResults.firstChild)
     }
+}
+
+function displayResults(Response){
+    removeSearchResults();
+    const SearchResults = document.getElementById("Search-Results")
     for(i=0; i<Response.length; i++){
         let Card = document.createElement("div");
         Card.className = "Card-Wrapper";
@@ -33,4 +38,8 @@ function displayResults(Response){
 
         SearchResults.appendChild(CardLink);
     }
+}
+
+function handleError(){
+    removeSearchResults();
 }
