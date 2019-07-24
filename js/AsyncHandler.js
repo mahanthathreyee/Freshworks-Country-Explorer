@@ -10,6 +10,7 @@ function searchCountries(){
     }).then(response => {
         //Todo dispaly search results
         console.log(response);
+        displayResults(response)
     }).catch(error => {
         //Todo Report Error to user
         console.error(error);
