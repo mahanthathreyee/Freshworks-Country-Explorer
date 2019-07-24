@@ -1,8 +1,10 @@
 function searchCountries(){
     let SearchString = document.getElementById("Search-Bar").value;
     
-    if(SearchString === "")
+    if(SearchString === ""){
         removeSearchResults();
+        return;
+    }
 
     const CountryAPI_URL = new Request("https://restcountries.eu/rest/v2/name/" + SearchString);
 

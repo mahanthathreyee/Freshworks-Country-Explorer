@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
     document.getElementById("Search-Bar")
         .addEventListener("keyup", (event) =>{
             event.preventDefault();
-            if(event.keyCode === 13)
+            //if(event.keyCode === 13)
                 searchCountries();    
     });
 });
@@ -16,7 +16,7 @@ function removeSearchResults(){
 
 function displayResults(Response){
     removeSearchResults();
-    const SearchResults = document.getElementById("Search-Results")
+    const SearchResults = document.getElementById("Search-Results");
     for(i=0; i<Response.length; i++){
         let Card = document.createElement("div");
         Card.className = "Card-Wrapper";
@@ -42,4 +42,9 @@ function displayResults(Response){
 
 function handleError(){
     removeSearchResults();
+    const SearchResults = document.getElementById("Search-Results");
+    let ErrorMessage = document.createElement("h1");
+    ErrorMessage.className = "Error-Message";
+    ErrorMessage.innerHTML = "Oops! No results found";
+    SearchResults.appendChild(ErrorMessage);
 }
