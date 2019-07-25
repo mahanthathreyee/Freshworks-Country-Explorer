@@ -1,3 +1,4 @@
+//Fetches the parameter from the URL to get the country details to be presented
 function getParameterByName(name) {
     let url = window.location.href;
     name = name.replace(/[\[\]]/g, '\\$&');
@@ -12,6 +13,7 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+//For detecting when the DOCUMENT LOADS
 document.addEventListener("DOMContentLoaded", function(event) { 
     let CountrySelected = getParameterByName("country");
     if(CountrySelected == null)
@@ -19,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     searchCountries(CountrySelected, displayCountryDetails, displayError, true);
 });
 
+//Function to handle displaying data to the HTML file
 function displayCountryDetails(Response){
     console.log(Response);
     document.title = Response[0]["name"];
@@ -49,6 +52,8 @@ function displayCountryDetails(Response){
     }
 }
 
+
+//Function to handle error
 function displayError(){
     const Container = document.getElementById("Container");
     
