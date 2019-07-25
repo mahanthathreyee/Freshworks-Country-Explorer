@@ -3,9 +3,18 @@ window.addEventListener('load', () => {
         .addEventListener("keyup", (event) =>{
             event.preventDefault();
             //if(event.keyCode === 13)
-                searchCountries();    
+                searchInputHandler();    
     });
 });
+
+function searchInputHandler(){
+    let SearchString = document.getElementById("Search-Bar").value;
+    if(SearchString === ""){
+        removeSearchResults();
+        return;
+    }
+    let response = searchCountries(SearchString, displayResults, handleError);
+}
 
 function removeSearchResults(){
     const SearchResults = document.getElementById("Search-Results")

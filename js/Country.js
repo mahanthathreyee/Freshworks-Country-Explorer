@@ -10,6 +10,6 @@ function getParameterByName(name) {
 
 document.addEventListener("DOMContentLoaded", function(event) { 
     let CountrySelected = getParameterByName('country');
-    //Handle Invalid Data
+    //Todo Handle Invalid Data
     
 });
