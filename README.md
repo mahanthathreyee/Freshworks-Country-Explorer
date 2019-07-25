@@ -13,14 +13,23 @@ The webpages should viewable in any operating system and should be backwards com
 The webpages were tested in `Manjaro XFCE edition` based on `Arch Linux` using `linux ke.59-1` on `Firefox Developer Edition v69.0b4` (architechture: `64bit`)
 
 # for `index.html` on smaller devices# File Structure
+
 The two webpages are `index.html` and `country.html` which are placed in the root directory
+
 The `/js` directory contains all the JS file
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`AsyncHandler.js` handles the fetch API to retrieve the countries by name
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Country.js` handles the UI for `country.html`
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`UIHandler.js` handles the UI for `index.html`
+
 The `/css` directory contains all the CSS files
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`country.css` contains the styles for `country.html`
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`index.css` contains the styles for `index.html`
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`index-sm.css` contains the styles for `index.html` on smaller devices 
 
 ## Nomenclature for classes, IDs etc.
