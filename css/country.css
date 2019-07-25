@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+
+.Container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Back-Btn{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    text-decoration: underline #000000;
+    color: #000000;
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.Back-Btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: underline #ffffff;
+    transition: all 0.5s ease;
+}
+
+.Heading{
+    max-height: 30%;
+    max-width: 100%;
+    height: 30%;
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Country-Flag{
+    max-height: 90px;
+    max-width: 150px;
+    height: 90px;
+    width: 150px;
+    margin-right: 25px;
+}
+
+.Country-Name{
+    font-family: 'Raleway', sans-serif;
+}
+
+.Country-Details-Wrapper{
+    max-height: calc(70vh - 30px);
+    max-width: 100%;
+    height: calc(70vh - 30px);
+    width: 100%;
+    overflow: auto;
+    border-top: 1px solid #000000;
+}
+
+.Country-Detail-Row{
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.Country-Detail-Row > td{
+    padding: 10px;
+}
+
+.Country-Detail-Row > td:first-child{
+    min-width: 30vw;
+    overflow: hidden;
+    text-align: center;
+    border-right: 1px #000000 solid;
+    border-bottom: 1px #000000 solid;
+}
+
+.Country-Detail-Row > td:nth-child(2){
+    word-wrap: normal;
+}

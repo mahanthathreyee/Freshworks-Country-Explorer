@@ -31,7 +31,7 @@ function displayCountryDetails(Response){
     const CountryTBody = document.getElementById('Country-TBody');
     for(Key in Response[0]){
         let TableRecord = document.createElement("tr");
-        TableRecord.className = "Country-Detail";
+        TableRecord.className = "Country-Detail-Row";
         
         let Detail_1 = document.createElement("td");
         Detail_1.innerHTML = capitalizeFirstLetter(Key);
