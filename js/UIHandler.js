@@ -32,7 +32,7 @@ function displayResults(Response){
         Card.appendChild(CountryName);
         
         let CardLink = document.createElement("a");
-        CardLink.setAttribute("href", "#");
+        CardLink.setAttribute("href", "./country.html?country="+Response[i]["name"]);
         CardLink.className = "Card-Link";
         CardLink.appendChild(Card)
 

@@ -119,6 +119,7 @@ a {
 }
 
 .Error-Message{
+    text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 2em;
 }
