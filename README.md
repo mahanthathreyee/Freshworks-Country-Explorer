@@ -12,7 +12,7 @@ The webpages should viewable in any operating system and should be backwards com
 
 The webpages were tested in `Manjaro XFCE edition` based on `Arch Linux` using `linux ke.59-1` on `Firefox Developer Edition v69.0b4` (architechture: `64bit`)
 
-# for `index.html` on smaller devices# File Structure
+## File Structure
 
 The two webpages are `index.html` and `country.html` which are placed in the root directory
 
