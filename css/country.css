@@ -17,7 +17,8 @@ html, body{
     top: 10px;
     left: 10px;
     padding: 10px;
-    text-decoration: underline #000000;
+    text-decoration: underline transparent;
+    border: 1px solid #000000;
     color: #000000;
     background-color: #ffffff;
     transition: all 0.5s ease;
@@ -81,4 +82,13 @@ html, body{
 
 .Country-Detail-Row > td:nth-child(2){
     word-wrap: normal;
+}
+
+.Error-Msg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
 }

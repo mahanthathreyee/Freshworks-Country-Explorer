@@ -14,7 +14,8 @@ function capitalizeFirstLetter(string) {
 
 document.addEventListener("DOMContentLoaded", function(event) { 
     let CountrySelected = getParameterByName("country");
-    //Todo Handle Invalid Data
+    if(CountrySelected == null)
+        displayError();
     searchCountries(CountrySelected, displayCountryDetails, displayError, true);
 });
 
@@ -49,6 +50,17 @@ function displayCountryDetails(Response){
 }
 
 function displayError(){
-    //Todo display error
-    console.log("Error");
+    const Container = document.getElementById("Container");
+    
+    let Heading = document.getElementById("Heading");
+    Container.removeChild(Heading);
+    
+    let CountryDetailsWrapper = document.getElementById("Country-Details-Wrapper");
+    Container.removeChild(CountryDetailsWrapper);
+    
+    let ErrorMsg = document.createElement("h1");
+    ErrorMsg.className = "Error-Msg";
+    ErrorMsg.innerHTML = "Oops! Something went wrong";
+    
+    Container.appendChild(ErrorMsg);
 }
